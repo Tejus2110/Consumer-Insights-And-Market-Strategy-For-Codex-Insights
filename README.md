@@ -1,4 +1,4 @@
-# Energy Drink Market Analysis – CodeX (India Launch)
+# Energy Drink Market Analysis – CodeX
 
 ## Project Overview  
 
