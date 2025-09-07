@@ -1,0 +1,256 @@
+pvalue > 0.05 so it means that - gender doesnt has a significant role in improvement desired. They are kind of genral for all gender - reduced sugar content, more natural ingredients and then wide range of flavors.
+
+but we see that - the compact and portable cans and then innovative bottle design are more important for all the customers.
+
+
+Older people generally have the bad perception about the energy drinks in general. 
+And Younger People have position perception or neutral perception about energy drinks so our marketing team for age group 31- 45 years of age we need to change their perception.
+and for the younger people we need to include the elements of when they consume the energy drink we need to include those moments in the marketing campaigns.
+31-45 selected Dangerous over other groups 202.49 %
+46-65 selected Dangerous over other groups 165.93 %
+15-18 selected Healthy over other groups 53.16 %
+19-30 selected Healthy over other groups 36.49 %
+
+
+younger consumers < 30 engage more with the online_ads.
+older consumers > 45+ engage more with the TV commercials.
+31-45 comparable for both tv commercial and online_ads but -- tv commerical wins.
+so marketing team should focus more on the online ads for targeting younger customers and should focus more on the tv commercials for the older customers.
+
+yes there is a strong relationship between the willingness to spend the amount for a drink with age.
+younger consumers perfer the range of 50-100
+slightly older consumere prefer the range of 100-150.
+To target younger customers we need to focus on keeping the price range from 50-100.
+
+19-30 selected 50-99 over other groups 87.66 %
+31-45 selected 100-150 over other groups 114.41 %
+46-65 selected Above 150 over other groups 94.29 %
+
+
+
+pvalue < 0.05 for the purchase location and age group means there is no statistical prof for this but from our sample data - we can see that bulk of sales across all the age group occurs from the supermarkets, followed by online retailers and then gym and fitness trainers.
+
+
+
+pvalue < 0.05
+Cramers_V: 0.21680514323772201  -- weak to moderate association.
+gender drives the consume reason.
+males consume energy drinks for increased energy and focus, and combat fatigue, and to improve sports performance.
+female consume energy drinks to combat fatigue and increased energy and focus.
+Marketing team can use these themes in campaign to target customers.
+
+
+
+males generally percieve energy drinks as effective and healthy.
+females generally percieve energy drinks as not_sure what it does to thier body or dangerous.
+Marketing campaign can focus on improving the perception about energy drinks.
+
+# brand reputation is one of the main reasons of choosing a product of some brand over other brand. So New to improve brand reputation.
+irrespective of the gender - Non availablity of the products, health concern about product and unfamiliarity about brand are main reasons preventing our customer from purchasing codex drinks.
+Marketing Team should higly focus on building brand reputation -- this can be done by making a famous personality face of brand.
+# maybe some sportstar as consumers -- use it to improve sport performance, increase focus. As gender seems to be driving the consume reason.
+
+Males centric marketing - should be To create brand reputation and we need to make our product available locally
+Females centric marketing - shoud be for Taste and effectiveness of energy drink.
+Male selected Availability over other groups 91.04 %
+Male selected Brand reputation over other groups 24.84 %
+Female selected Taste/flavor preference over other groups 24.68 %
+
+
+Across all genders, online ads and TV commercials are the primary drivers of engagement. However, males exhibit a secondary preference for outdoor billboards, while females interact more with alternative modes like print media or influencer campaigns. These insights highlight opportunities for targeted advertising strategies.
+
+
+on seeing the heatmap - we found that across all the gender categories - 50-99 Rs range is the most popular one,followed by the 100-150 
+this result is similar to the result of the price_range vs age - there also across all the age categories these two were the most popular - price range.
+We need to keep the pricing of our product within the range of 50-99Rs this will attract customers.
+
+apart from delhi and Mumbai -- people don't know about our brand so we need to reach the customers in other cities also,Can be done using the --> dedicated tier wise marketing strategy.
+
+
+across all the cities brand perceptions is neutral mostly.
+but for pune,ahemdabad and jaipur our brand perception is negative.
+Pune selected Negative over other groups 56.21 %
+Jaipur selected Negative over other groups 46.4 %
+Ahmedabad selected Negative over other groups 65.42 %
+
+
+For the cities like banglore,chennai,hyderabad,kolkata the respondant have tried the CodeX drink and as the pvalue is 0 so strong relationship in variables and 
+for cities like mumbai and pune and delhi - most people have not tried our drinks but they have heard of our drinks.
+brand perception for pune is negative , but brand_perception for mumbai and delhi is mostly positive.
+Pune,Jaipur,Kolkata,Lucknow - Not Avaialable Locally - is the main reason preventing people from trying our drinks
+For mumbai - Unfamiliarity with the brand , even though brand perception is positive and they have heard about the brand still not - buy our drinks --> so Imp.
+For Pune - Health Concern is the main reason and non available locally  people dont buy our drinks -- Need to work on removing this bad brand_perception - by targeted add campaign.
+For Delhi - Unfamiliarity with the brand is the reason of not trying our products even though there is positive brand perception and have heard about our products before. Along with the health concerns.
+
+Summary - Non Local Availablity,Unfamiliarity with the brand and health concern.  3 main reason.
+
+
+Mumbai,pune,lucknow,jaipur,delhi,ahemdabad  --tv commericals
+for banglor,chennai, hyderabad , kolkata-online ads.
+To improve perception in pune -- focus on tv ads .
+
+Tier 1    [Hyderabad, Bangalore, Mumbai, Chennai, Delhi].
+Tier 2       [Ahmedabad, Pune, Lucknow, Jaipur, Kolkata].
+
+
+tier1 cities - mostly consume for - to stay awake during work/study, followed by before exercise.
+tier 2 cities - mostly consume for before exercise,throughout the day.
+
+Increased_energy_focus and To boost performance - are the main reasons for consumption in both the tiers.
+
+reasons preventing trying our product.
+tier 1 main reason -- health concern, then non local availability = not interested in energy drinks.
+tier 2 main reason -- Non local availability, unfamiliar with brand. -- and not interested in energy drinks.
+
+brand_reputation,then availability and then taste/flavor
+
+# tier1 cites - the respondants mostly engage with the online ads, followed by TV commerical etc.
+# tier2 cities - the respondants mostly engage with the TV commerical , followed by online ads etc.
+# we can use the this data to create the tier wise marketing strategy.
+
+
+# rare customer have tried our product so it seems that our current marketing strategy 
+# is compelling people to try our product -- but we need to improve.
+# and regular drinkers are not driking because of brand perception, or non local availability.
+we expected that if the person is having a higher consumption freq - there is more chance of him trying - our drink.but from the visualisation we can see that those who rarely drink or once a week - they tend to buy our drink and this is also shown by the pvalue < 0.05.
+The reason: is marketing is driving these less frequent consumers of energy drinks to try our product more.
+so our current marketing strategy is effective in converting those who rarely consume energy drink. So our current marketing strategy is good to get new customers.
+
+
+SO MARKETING TEAM SHOULD FOCUS ON somehow getting the frequen drinker to convince about our product and to do that they can do
+# conumer_freq,marketing_channels and tier analysis. or 
+# consumer_freq,marketing_channels and city analysis. 
+# but between consumer_freq and marketing channels there is no specific relationship present.
+
+
+but the rare and very less frequently drinkers - choose a particular brand because of brand reputation, then follwed by availability and then by taste/flavor.
+so the frequent drinker have developed affinity for a brand over time and new buyers are heavily dependent on the external factor to choose a particular brand.
+
+# across all the categoried - compact and portable cans and innovative bottle design is preferred.
+# frequent drinker - 2-3 times a week - they also seem to prefer collectible packaging -- NOT STATISTICALLY BAKCED. - pvalue > 0.05
+
+
+# purchase location is not affecting consume_frequency pvalue > 0.05
+# but from the graph - we can see that across all the categies of drinker(based on consume_freq) - supermarkets is most popular purchase location.
+# followed by the online retailers and then gym and fitness centers
+So supply teams should ensure that the orders to the stores are delivered on time so that we we don't loose out on business opportunity because of non availability.
+
+
+consume_reason vs marketing_channels
+# p value < 0.05 but cramers v suggest weak association.
+# currently all the advertisements are focusing on the increased_energy and focus and to combat fatigue.
+# and most of the outdoor billboards are specifically targeting to enhance sports performance.
+
+online ads and tv commerical seems to be working for our brand more as compared to other marketing channels - in making the consumer know that we exist.
+see for the tried_before vs marketing_channels -  only online ads comples the customer to buy and try our products 
+TV commericals though make us reach the audience but still its not able to comple customer to purchase our products.    -- TV commerical is popular is certain cities more than the online ads. These cities are -  Ahemdabad,Delhi,Mumbai,Pune,Lucknow and Jaipur.
+need to change the tv commerical strategy or need to scrape it completely and focus on online and other ads forms (Future Research)
+
+
+# our product has been tried more in tier 1 cities.
+# thought there is weak association between variables.
+
+
+cola-coka,Bepsi,gangster they
+get picked over other brands because of first - solid brand reputation, followed by taste/flavor preference and then availability.
+# the most popular brands - have good online and tv commercial strategy.
+# means the customer who like these brands - engage with these marketing channels with these companies products.
+
+
+# but we can use the theme of working late or studying or sports/exercise in our online or tv commerical ads to attract more and more customers.
+
+
+# marketing teams can do the customer profiling and can do targeting messaging.
+
+
+
+purchase location age city tier.
+consume_freq_column analysis remaining because of the anova analysis.
+consume_freq vs age
+consume_freq vs gender.
+taste_experiece analysis later and below here lots of one way and 2 way anova tests have been performed.
+heard_before, tried_before and marketing channels.
+
+
+
+# proportional analysis
+1) consume_time vs age.
+19-30 selected Before exercise over other groups 26.28 %,
+31-45 selected For mental alertness over other groups 32.45 %
+46-65 selected For mental alertness over other groups 54.89 %
+
+2) general_perceptions vs age.
+31-45 selected Dangerous over other groups 202.49 %
+46-65 selected Dangerous over other groups 165.93 %
+15-18 selected Healthy over other groups 53.16 %
+19-30 selected Healthy over other groups 36.49 %
+
+
+3) reasons_for_choosing_brands vs age.
+15-18 selected Brand reputation over other groups 33.68 %
+15-18 selected Taste/flavor preference over other groups 35.21 %
+
+4) marketing_channels vs age.
+15-18 selected Online ads over other groups 58.68 %
+19-30 selected Online ads over other groups 62.36 %
+31-45 selected Other over other groups 24.62 %
+46-65 selected Other over other groups 35.69 %
+65+ selected Other over other groups 47.49 %
+31-45 selected Outdoor billboards over other groups 49.74 %
+31-45 selected Print media over other groups 30.87 %
+46-65 selected Print media over other groups 35.34 %
+65+ selected Print media over other groups 54.36 %
+15-18 selected TV commercials over other groups 23.62 %
+31-45 selected TV commercials over other groups 12.91 %
+
+5) price_range vs age.
+19-30 selected 50-99 over other groups 87.66 %
+31-45 selected 100-150 over other groups 114.41 %
+46-65 selected Above 150 over other groups 94.29 %
+
+6) reasons_for_choosing_brands vs gender.
+Male selected Availability over other groups 91.04 %
+Male selected Brand reputation over other groups 24.84 %
+Female selected Taste/flavor preference over other groups 24.68 %.
+
+7) marketing_channels vs gender.
+Female selected Online ads over other groups 37.11 %
+Male selected Outdoor billboards over other groups 28.02 %
+Female selected Print media over other groups 39.6 %
+
+8) brand_perception vs city.
+Pune selected Negative over other groups 56.21 %
+Jaipur selected Negative over other groups 46.4 %
+Ahmedabad selected Negative over other groups 65.42 %
+
+9) reasons_preventing_trying vs city.
+Delhi selected Health concerns over other groups 65.22 %
+Mumbai selected Health concerns over other groups 50.82 %
+Pune selected Health concerns over other groups 77.03 %
+Jaipur selected Not available locally over other groups 47.83 %
+Kolkata selected Not available locally over other groups 36.4 %
+Lucknow selected Not available locally over other groups 40.99 %
+Delhi selected Not interested in energy drinks over other groups 31.98 %
+Chennai selected Other over other groups 22.81 %
+Jaipur selected Other over other groups 52.75 %
+Pune selected Other over other groups 46.15 %
+Delhi selected Unfamiliar with the brand over other groups 44.66 %
+Jaipur selected Unfamiliar with the brand over other groups 36.12 %
+Mumbai selected Unfamiliar with the brand over other groups 51.4 %
+
+10) consume_time vs tier
+Tier 2 selected Throughout the day over other groups 154.17 %
+Tier 1 selected To stay awake during work/study over other groups 81.14 %
+
+11) tried_before vs tier
+Tier 2 selected No over other groups 13.4 %
+Tier 1 selected Yes over other groups 82.98 %
+
+12) tier vs consume_frequency
+Pvalue: 1.2086474354118675e-26, Cramers_V: 0.11300423362579898
+Once a week selected Tier 2 over other groups 46.69 %
+Rarely selected Tier 2 over other groups 17.43 %
+2-3 times a week selected Tier 1 over other groups 6.14 %
+Daily selected Tier 1 over other groups 9.13 %
+
+

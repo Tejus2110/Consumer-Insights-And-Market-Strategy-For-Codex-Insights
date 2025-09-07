@@ -1,0 +1,682 @@
+Univariate Analysis.
+
+1) consume_frequency
+34.91% of respondants - 2/3 time per week - most popular.
+
+2) consume_time
+34.09% of the respondants - to stay awake during work/study.
+31.48% - before exercise.
+19.95% - for mental alterness
+
+3) consume_reason
+35.74% - increased energy and focus.
+24.28% - to combat fatigue.
+
+4) heard_before
+55.53% - yes
+
+5) brand_perception 
+59.74% neutral
+22.57% positive
+
+6) general_perception
+29% effective,22.43% healthy, 22.38% considers dangerous, not sure - rest.
+
+7) tried_before
+yes - 20.26%, rest no.
+
+8) reasons_preventing_trying
+19.15% - not available locally.
+18.07% - health concerns.
+17.88% - not interested in energy drinks.
+
+9) current_brands
+cola - coka - 25.38% , Bepsi - 21.12, Gangster - 18.54%.
+
+10) reasons_for_choosing_brands
+brand_reputation - 26.52%, Taste/Flavor - 20.11%, Availability - 19.10%.
+
+11) improvements_desired
+29.95% - reduced_sugar_content
+24.98% - more natural ingredients
+20.37% - wide range of flavor.
+
+12) ingredients_expected
+38.96% - desires - caffine
+25.34% - desires - vitamins
+20.17% - desires - sugar
+15.53% - desires - guarana
+
+13) health_concerns
+60.45% - yes 
+
+14) interest_in_natural_or_organic.
+49.83% - yes.
+30.62% - no.
+19.55% - not sure.
+
+15) marketing_channels.
+40.20% - online ads.
+26.88% - TV Commercials.
+
+16) packaging_preference
+39.84% - compact and portable cans.
+30.47% - innovative bottle design.
+
+17) limited_edition_packaging
+40.23% - no
+39.46% - yes
+20.31% - not sure
+
+18) price_range
+42.88% : 50-99, 31.42% : 100-150.
+
+19) purchase_location
+supermarkets - 44.94%
+online retailers - 25.50%
+
+20) typical_consumption_situations
+sports/exercise - 44.94%
+studying/working late - 32.31%
+
+21) age
+55.20% respondants belong to 19-30 years of age.
+23.76% respondants belong to 31-45 years of age.
+14.88% respondants belong to 15-18 years of age.
+
+22) gender
+60.38% respondants belong to male
+34.55% respondants belong to female
+rest - non binary 
+-- will need to check here - using the one way anova test because here - i want to predict about the population not only about the sample data 10k records.
+-- give the score to the drinking and compare the means for the 3 categories. - one way anova and use the post hoc test later, and then plot the box plot.
+For each categorical demographic variable:
+Perform One-Way ANOVA to compare the means of drinking scores across the different levels (e.g., comparing drinking scores across different genders or age groups).
+If ANOVA is significant, follow up with a post-hoc test (like Tukey’s HSD) to identify which specific groups differ.
+Visualize the results — you could use boxplots or bar charts to show the differences in drinking scores across groups.
+
+23) city
+28.28% respondants belong to Banglore.
+18.33% respondants belong to Hyderabad.
+15.10% respondants belong to Mumbai.
+
+24) Tier
+75.37% respondants belong to Tier1 city.
+24.63% respondants belong to Tier2 city.
+
+
+# Bivariate Analysis: - Demographical Analysis.
+1) consume_freq vs age
+pvalue = 0.36 > 0.05 which means that the age and consume_freq are not statistically related.
+means that the age doesnt drive the consume freq.
+and consumption freq across all the age ranges - is relatively similar.
+
+2) consume_time vs age  -- pvalue = 0.00 so there is a relationship between these two vars. -- CHI SQ TEST.
+most of the consumer in the age group 19-30 followed by the age group in 31-45.
+across all the age groups - most people - consume energy drink - Before Exercise and To stay awake during work/study.
+Marketing team can focus on these aspects more - in their ad campaign - Like to stay during work/study, Before Exercise- But this is statistically Backed.
+Marketing team can focus on these age groups as they tend to have money and are not less hesitant to try new things.
+
+Because 55% of the respondants in the dataset are of age group 19-30 so due to this I cant give how strong or weak or how much percentage one age age group drinks at a particular time. So just using proportion.
+Cramer V for consume_time vs age is 0.08 which tells us that the overall avg effect is negligible but high residuals in the sample data -- says that for some values the differerence is present.
+Proportional analysis:
+19-30 selected Before exercise over other groups 26.28 %,
+31-45 selected For mental alertness over other groups 32.45 %.
+46-65 selected For mental alertness over other groups 54.89 %.
+
+3) consume_reason vs age
+pvalue = 0.787 > 0.05 so for chi sq test - this indicates that - they are independent - globally.
+Insight - But not a statistical insight - but at the local level - we see that for age group 19-30 increase energy and focus and to combat fatigue are main reasons for consumption of energy drink.
+
+4) general_perception vs age
+pvalue = 0 for chi sq test - that indicates strong relation in the age and perception with 0.28 Cramers V 
+people aged 19-30 - perceieve product - as effective, healthy.
+while older people 46+ , considers it dangerous.
+Cramers V = 0.28 -- this indicates the moderate association between two categorical variables.
+Older People 31-45 and 46+ -- 54% of these age group resopondants consider energy drinks as dangerous.
+Age Group - 19-30 consider energy drinks as effective and healthy - 55.3% of the respondants.
+-- Marketing Team should specifically focus on the age group of 31-45 such that they should percieve the drink as non dangerous because they have disposable income to spend on.
+
+
+reason_preventing_trying vs age
+pvalue > 0 - So fail to reject null hypothesis so no special relationship is present 
+but for all age groups - not available locally, and health concerns and unfamiliarity with our brand is main problem here
+Marketing - should focus on making the brand familiar with the customers, and Making is perceieve non harmful to health and 
+we need to work on supply chain so that products are available.
+
+
+5) current_brands vs age(competitor analysis kind of thing)
+pvalue < 0 so very high relationship for chi sq test.
+Cramers V -- 0.04 -- not a lot of practical significance.
+19-30 age group - dominates across all the brand. -- cola-coka followed by Bepsi,and then gangster.
+15-18 age group - gangster dominates followed by cola - coka, then Bepsi.
+overall - cola - coka dominates.
+# means in market in general coka cola dominates currenlty
+higher age group - lesser consumption of drinks.
+15-18 selected Blue Bull over other groups 43.47 %
+15-18 selected Gangster over other groups 26.74 %
+
+6) reasons_for_choosing_brands vs age
+pvalue < 0 so very high relationship - for chi sq test.
+Cramver_V = 0.055 -- so very low practical significance.
+currently across age groups - reason to choose a particular brand of engery drink - is BRAND REPUTATION, follwed by TASTE/FLAVOR PREFERNECE,AVAILABILITY then effectiveness.
+
+marketing team - should focus on creating brand repuatation as it seems to be the biggest driver of which companies product consumer picks up.
+and product team - need to create new tastes and flavour and focus on effectiveness.
+
+15-18 selected Brand reputation over other groups 33.68 %
+15-18 selected Taste/flavor preference over other groups 35.21 %
+
+7) improvements_desired vs age
+pvalue > 0.05 
+It means that the needs are similar across all the age based subgroups and not changing a lot as per age wise subgroups
+customer demand the reduced sugar content in energy drinks, and wide range of flavour and more natural ingredients.(product development) POINTS.
+
+
+
+8) ingredients_expected vs age
+pvalue > 0.05 as needs are similar across all the age subgroups.
+caffine > vitamins > sugar > gaurana.
+we need to focus on putting caffine and vitamins in energy drinks - (product improvements)..
+
+9) health_concerns vs age
+pvalue > 0.05 means age is not driving the health concern among the energy drink consumers. Health concern is present across all the subgroups without a strong age related trend.
+for marketing - we should target across all the age groups not only - for a particular one age group as age is not driving the health concern among consumers.
+means consumers across all age groups are concerned about health impact of energy drinks.
+
+
+
+10) interest_in_natural_or_organic vs age
+pvalue < 0.05 so relation is present - age is driving the interest_in_natural_or_organic.
+Cramers_V: 0.028171025799998067.
+19-30 and 31-45 - has high demand of natural/organic energy drinks.
+15-18 - also has demand of natural/organic energy drinks.
+non significant as resiudals are not very significant(> 2 or < -2).
+
+
+11) marketing_channels vs age
+pvalue < 0.05 so relationship is present between the marketing_channels and age.
+Cramers V = 0.139.
+younger consumers < 30 engage more with the online_ads.
+older consumers > 45+ engage more with the TV commercials.
+31-45 comparable for both tv commerical and online_ads but -- tv commerical wins.
+
+so to target younger generation - we can launch online/social_media campaign.
+and to target older customer - we can have a separate tv commercial strategy.
+
+15-18 selected Online ads over other groups 58.68 %
+19-30 selected Online ads over other groups 62.36 %
+31-45 selected Other over other groups 24.62 %
+46-65 selected Other over other groups 35.69 %
+65+ selected Other over other groups 47.49 %
+31-45 selected Outdoor billboards over other groups 49.74 %
+31-45 selected Print media over other groups 30.87 %
+46-65 selected Print media over other groups 35.34 %
+65+ selected Print media over other groups 54.36 %
+15-18 selected TV commercials over other groups 23.62 %
+31-45 selected TV commercials over other groups 12.91 %
+
+
+
+12) packaging_preference vs age
+pvalue > 0.05 so it shows that - ages doesn't drive the packaging_preference among peple.
+But still we see that for all the age groups we see that compact and portable can based design is popular follwed by the innovative bottle design.
+
+13) limited_edition_packaging vs age
+There is no statistically significant relationship between age and interest in limited edition packaging. Thus, age should not be a key factor when designing limited edition packaging campaigns for energy drinks.
+
+14) price_range vs age
+pvalue < 0.05 means that there is a relationship between the amount willing to pay the amount for one drink vs age.
+Cramers_V: 0.2022388948412411
+yes there is a strong relationship between the willingness to spend the amount for a drink with age.
+younger consumers perfer the range of 50-100
+slightly older consumere prefer the range of 100-150.
+
+We can lauch two products --> one in price range 50-99 and one in range 100 - 150.
+To target younger customers we need to focus on keeping the price range from 50-100
+To target the slightly older or the working professionals we need to set the price from 100 - 150.
+19-30 selected 50-99 over other groups 87.66 %
+31-45 selected 100-150 over other groups 114.41 %
+46-65 selected Above 150 over other groups 94.29 %
+
+
+15) purchase_location vs age
+pvalue > 0.05 means age is not driving the purchsing location.
+even though there is no special relationship - means there is no statistical proff for this but from our sample data - we can see that bulk of sales across all the age group occurs from the supermarkets, follwed by online retailers and then gym and fitness trainers.
+
+16) typical_consumption_behaviour vs age
+pvalue > 0.05 - so there is no relationship between the two variables.
+means across all the age groups the consumption behaviour gives a similar sense of feeling.
+so even though there is no statistical prove - but from the sample data - we see that across all the age groups - consumers mostly use for sporting/exercise followed by when they have to work late or while studying follwed by the social events.
+
+
+17) consume_frequency vs gender
+pvalue > 0.05 it means that - we fail to reject null hypothesis.
+and also from the heatmap also - we can see that - consume_frequency is not really depeding on the gender.
+from one way anova test for the consumer freq score the mean of the consume_freq_scores for all the groups is actually equal so we FTR null hypothesis , so this also proves that the consume_freq is not depending on the gender.
+
+18) consume_time vs gender
+pvalue > 0.05 means no gender is not driving the consume_time.
+same here across all the genders we can see that most people To stay awake during work/study, then before exercise mainly.
+-- insight has been written in consume_time vs age - there pvalue < 0.5.
+
+
+
+19) consume_reason vs gender
+pvalue < 0.05
+Cramers_V: 0.21680514323772201  -- weak to moderate association.
+gender drives the consume reason.
+males consume energy drinks for increased energy and focus, and combat fatigue, and to import sports performance.
+female consume energy drinks to combat fatigue and increased energy and focus.
+Marketing team can incorporate these elements to attract the customers - by targetted messaging in ad campaign.
+For 'To boost performance', age group 'Female' selected this category 75.16% more often than other gender (proportionally).
+For 'To combat fatigue', age group 'Female' selected this category 23.09% more often than other gender (proportionally)
+For 'To enhance sports performance', age group 'Male' selected this category 110.26% more often than other gender (proportionally).
+For 'Increased energy and focus', age group 'Male' selected this category 36.99% more often than other gender (proportionally).
+
+
+20) brand_perception vs gender
+pvalue > 0.05 means not a lot of relationship between the brand_perception and gender, or gender is not driving the brand_perception
+for all the genders brand perceptions across all the brands is neutral mostly.
+
+21) general_perception vs gender
+pvalue < 0.05 means gender is driving the general_perception about energy drinks.
+Cramers_V: 0.11684827175429754 - low association.
+males generally percieve energy drinks as effective and healthy.
+females generally percieve energy drinks as not_sure what it does to thier body or dangerous.
+non binary has similar trends like the males.
+For 'Dangerous', age group 'Female' selected this category 61.94% more often than other gender (proportionally).
+For 'Effective', age group 'Male' selected this category 27.25% more often than other gender (proportionally).
+For 'Healthy', age group 'Male' selected this category 17.96% more often than other gender (proportionally).
+
+22) reasons_preventing_trying vs gender.
+pvalue > 0.05 - so Fail to reject null hypothesis, similar to the analysis of the reasons_preventing_trying and age here also same thing,
+irrespective of the gender - Non availablity of the products, health concern about product and unfamiliarity about brand are main reasons preventing our customer from purchasing codex drinks.
+
+23) current_brands vs gender
+pvalue < 0.05 means gender drive the brand selection.
+Cramers V: 0.03992004084810991 -- very low association.
+but in the data - we find the similar result for all the genders Cola-Coka, Bepsi and then Gangster are mostly preferred.
+Nothing unexpected here.
+
+24) reasons_for_choosing_brands vs gender
+pvalue < 0.05 means gender drives the reason for particular brand selection.
+Males tends to choose a particular brand over Codex - Brand for- Reputation, then Availability and then Taste/Flavor.
+Females tend to choose a pariticular brand over Codex - Brand for - Taste/Flavor, Effectiveness.
+
+Male selected Availability over other groups 91.04 %
+Male selected Brand reputation over other groups 24.84 %
+Female selected Taste/flavor preference over other groups 24.68 %
+
+Males centric marketing - should be To create brand reputation and we need to make our product available locally
+Females centric marketing - shoud be for Taste and effectiveness of energy drink.
+
+25) improvements_desired vs gender
+pvalue > 0.05 so it means that - gender doesnt has a significant role in improvement desired. They are kind of genral for all gender - reduced sugar content, more natural ingredients and then wide range of flavors.
+
+26) marketing_channels vs gender
+pvalue < 0.05 - but very similar results for all the genders - though secondary preference is varying.
+
+Across all genders, online ads and TV commercials are the primary drivers of engagement. However, males exhibit a secondary preference for outdoor billboards, while females interact more with alternative modes like print media or influencer campaigns. These insights highlight opportunities for targeted advertising strategies.
+
+Female selected Online ads over other groups 37.11 %
+Male selected Outdoor billboards over other groups 28.02 %
+Female selected Print media over other groups 39.6 %
+
+27) packaging_preference vs gender
+pvalue > 0.05 , no relationship - statistically 
+but we see that - the compact and portable cans and then innovative bottle design are more important for all the customers.
+
+28) price_range vs gender
+pvalue < 0.05 - indicating a strong relationship between the gender and price_range.
+on seeing the heatmap - we found that across all the gender categories - 50-99 Rs range is the most popular one,followed by the 100-150 
+this result is similar to the result of the price_range vs age - there also across all the age categories these two were the most popular - price range.
+
+29) purchase_location vs gender
+pvalue > 0.05 so Fail to reject Null hyp
+so - gender not influencing pruchase location.
+
+30) typical_consumption_situation vs gender
+pvalue > 0.05
+not a significant difference is present for the consumption situation across all the genders.
+
+31) consume_frequency vs city
+pvalue for chi sq - 0.00
+pvalue for anova table - 0.00
+for banglore - freq - 2/3 times a week is most popular , then 2-3 times a month.
+for chennai - daily
+for hyderabad - rarely
+for delhi - daily,2-3 times a month.
+for mumbai,pune  - 2-3 times week is most popular followed by 2-3 times in a month.
+
+For '2-3 times a month', 'Bangalore' city selected this category 26.26% more often than other cities (proportionally).
+For '2-3 times a month', 'Mumbai' city selected this category 32.49% more often than other cities (proportionally).
+For '2-3 times a month', 'Pune' city selected this category 31.04% more often than other cities (proportionally).
+For 'Daily', 'Chennai' city selected this category 182.68% more often than other cities (proportionally). -- apart from percentage --- chennai has very high proportion of regular drinker of energy drink.
+For 'Daily', 'Delhi' city selected this category 161.46% more often than other cities (proportionally).
+For 'Once a week', 'Kolkata' city selected this category 76.38% more often than other cities (proportionally).
+For 'Once a week', 'Hyderabad' city selected this category 59.63% more often than other cities (proportionally).
+For 'Rarely', 'Ahmedabad' city selected this category 100.76% more often than other cities (proportionally).
+For 'Rarely', 'Kolkata' city selected this category 114.16% more often than other cities (proportionally).
+For 'Rarely', 'Hyderabad' city selected this category 115.74% more often than other cities (proportionally).
+
+32) consume_time vs city
+pvalue < 0.05 means there is a relationship between the consume_time and city.
+cramer's v: 0.18 - weak association.
+the main cities banglore,hyderabad and mumbai - the cosumption is very similar
+For the other cites the cosumption time differs making the overall - difference.
+
+33) consume_reason vs city
+pvalue < 0.05 - means there is a relationship between the consume_reason and city
+cramers V: 0.08 -- means weak association.
+but 
+the major market(cities like banglore, hyderabad and mumbai) shows the similar behaviour in reason - increased energy and focus, to combat fatigue and to enhance sports performance.
+So this satistical differnece is coming majorly from the smaller cities.
+greater than 30% respondants of each city -- selected to increased energy and focus
+greater than 20% respondants of each city -- selected to combat fatigue.
+
+34) heard_before vs city
+pvalue < 0.05
+cramers v: 0.15 - practically no significance.
+our CodeX energy drink is heard mostly among the customer from delhi, mumbai.
+For 'Yes', 'Mumbai' city selected this category 35.56% more often than other cities (proportionally).
+For 'Yes', 'Delhi' city selected this category 42.68% more often than other cities (proportionally).
+
+35) brand_perception vs city
+pvalue < 0.05
+cramers v : 0.14 - low association.
+across all the cities brand perceptions is neutral mostly.
+perception is negative in pune, ahemdabad, jaipur.
+All are tier 2 cities with the negative brand perception -- marketing team needs to create specific strategies targeting these regions.
+Pune selected Negative over other groups 56.21 %
+Jaipur selected Negative over other groups 46.4 %
+Ahmedabad selected Negative over other groups 65.42 %
+
+36) tried_before vs city
+pvalue < 0.05 - so we can say that cities are driving the fact that wether people have tried our drink or not.
+cramers v = 0.26 -- weak association.
+For the cities like banglore,chennai,hyderabad,kolkata the respondant have tried the CodeX drink and as the pvalue is 0 so strong relationship in variables and 
+for cities like mumbai and pune and delhi - most people have not tried our drinks but they have heard of our drinks.
+brand perception for pune is negative , but brand_perception for mumbai and delhi is mostly positive.
+
+
+37) reasons_preventing_trying vs city
+pvalue < 0.05 so city is affecting the reasons for not trying the codex energy drink.
+Cramers V:0.16 -- weak association.
+Pune,Jaipur,Kolkata,Lucknow - Not Avaialable Locally - is the main reason preventing people from trying our drinks
+For mumbai - Unfamiliarity with the brand , even though brand perception is positive and they have heard about the brand still not - buy our drinks --> so Imp.
+For Pune - Health Concern is the main reason and non available locally  people dont buy our drinks -- Need to work on removing this bad brand_perception - by targeted add campaign.
+For Delhi - Unfamiliarity with the brand is the reason of not trying our products even though there is positive brand perception and have heard about our products before. Along with the health concerns.
+
+To summarise - Overall 3 main reasons across all the cities, Non Local Availablity,Unfamiliarity with the brand and health concern.
+
+Delhi selected Health concerns over other groups 65.22 %
+Mumbai selected Health concerns over other groups 50.82 %
+Pune selected Health concerns over other groups 77.03 %
+Jaipur selected Not available locally over other groups 47.83 %
+Kolkata selected Not available locally over other groups 36.4 %
+Lucknow selected Not available locally over other groups 40.99 %
+Delhi selected Not interested in energy drinks over other groups 31.98 %
+Chennai selected Other over other groups 22.81 %
+Jaipur selected Other over other groups 52.75 %
+Pune selected Other over other groups 46.15 %
+Delhi selected Unfamiliar with the brand over other groups 44.66 %
+Jaipur selected Unfamiliar with the brand over other groups 36.12 %
+Mumbai selected Unfamiliar with the brand over other groups 51.4 %
+
+38) current_brands vs city
+across all the cities -- same brands are most popular - cola - coka, Bepsi and Gangster.
+
+39) reasons_for_choosing_brands vs city
+pvalue < 0.05 so - city does drieves the reasons for choosing a specific brand of energy drink.
+for tier 1 cities(banglore,mumbai,chennai,delhi,hyderabad)  the brand reputation seems to matter the most first - follwed by availability(except for mumbai - the effectiveness overpowers the availability here.)
+for tier 2 cities the reasons vary. due to which we get overall statistical difference.
+
+40) marketing_channels vs city
+Mumbai ,Pune,Lucknow,Delhi,Ahemdabad,Jaipur - TV Commercials Work Best -- But we know that TV Commerical doesnt conver't to customer -- And that seems to be visible here -- see the tried_before vs city -- these are the cities where people haven't tried our energy drinks before.
+But for these cities reasons for not trying are different: 
+mumbai,delhi,ahemdabad - unfamiliarity with brand.
+jaipur,lucknow  - not available locally.
+pune - health concerns.
+
+41) consume_time vs tier
+pvalue < 0.05.
+cramers_v: 0.228 weak to moderate association.
+tier1 cities - mostly consume for - to stay awake during work/study, followed by before exercise.
+tier 2 cities - mostly consume for before exercise,throughout the day.
+For 'To stay awake during work/study', 'Tier 1' city selected this category 81.14% more often than other tier (proportionally).
+For 'Throughout the day', 'Tier 2 ' city selected this category significantly higher number of times than expected.
+Keeping that in mind we can push the targeting messages to these cities at these specific timing.(will need extra analysis with time Future Research)
+Tier 2 selected Throughout the day over other groups 154.17 %
+Tier 1 selected To stay awake during work/study over other groups 81.14 %
+
+
+42) consume_reason vs tier
+pvalue < 0.05 but after looking at visualisation we can see that the values are not very different so we can that.
+cramers_V : 0.05 -- weak/low association.
+Increased_energy_focus and To boost performance - are the main reasons for both the tiers.
+
+43) tried_before vs tier
+pvalue < 0.05 means tier has a relationship with the tried_before
+cramers v: 0.11 -- means weak association.
+the respondants in the tier 1 cities have tried our product more as compared to tier 2 so we need to improve and focus more on marketing and introducing our product offering to the tier2 cities.
+For ('No' tried before), 'Tier 2' selected this category 13.40% more often than other tier (proportionally).
+For ('Yes' tried before), 'Tier 1' selected this category 82.98% more often than other tier (proportionally).
+
+44) taste_experience vs tier.
+pvalue > 0.05 -- so no relationship - thats why no variation in the box plots.
+the taste_experience of CodeX enegry drink varies same for both the tiers of cities where customer have tried.
+still in the lower range - product's taste need to be improved.
+
+
+45) reasons_preventing_trying vs tier
+pvalue < 0.05 -  so relationship between tier and reasons_preventing_trying is there.
+cramers v: 0.13
+tier 1 main reason -- health concern, then non local availability = not interested in energy drinks.
+tier 2 main reason -- Non local availability, unfamiliar with brand. -- and not interested in energy drinks.
+
+
+46) reason_for_choosing_brands vs tier
+pvalue < 0.05 means there is a relationship.
+tier1 cities - customer selects the energy drink brands by seeing - brand_reputation,then availability and then taste/flavor
+tier2 cities customer selects the energy drinks brands by seeing - brand_reputation,taste/flavor,effectiveness.
+
+
+47) marketing_channels vs tier
+pvalue < 0.05 - so tier does affect marketing channels.
+cramers v: 0.14 -- weak association.
+tier1 cites - the respondants mostly engage with the online ads, followed by TV commerical etc.
+tier2 cities - the respondants mostly engage with the TV commerical , followed by online ads etc.
+For 'TV commercials', 'Tier 2' city selected this category 60.29% more often than other tier (proportionally).
+For 'Online ads', 'Tier 1' city selected this category 18.84% more often than other tier (proportionally).
+
+
+48) limited_edition_packaging vs tier
+pvalue < 0.05 so effect is present of tier with the limited edition packaging
+in tier2 cities mostly no for limited_edition_packaging.
+in tier1 there is a tie.
+
+49) typical_consumption_situtation vs tier.
+# no particular relationship - but still the logic dictates that normal usage/consuption situation will be sports/exercise or studying/working late.
+
+50) consume_frequency vs age,gender -- 2 Way anova and Plots
+consumption freq doesnt depend on the age.
+consumption freq doesnt depend on the gender
+consumption freq doesnt depend on the age:gender
+
+51) consume_frequency vs age,city
+age is > 0.05 - so not statistically significant differnce - also from the graph for various age groups - the box plot does changes a lot and variability alos kind of similar.
+city < 0.05 - so statistically significant - also from the graph - cities differ - in the verical height so difference is present.
+age:city - see here -statistically significant but not by a lot (0.05 - 1.032949e-02  = 0.03967)
+
+So now we should focus on the city based marketing instead of marketing as per age.
+
+52) consume_frequency vs age,tier
+age: pvalue > 0.05 - can also see from the graph.
+tier: pvalue < 0.05 - statistically significant difference is present so --> the consume freq  -- for tier 1 higher than tier2 cities consumpiton frequency.
+age:tier : pvalue > 0.05  - no statistical difference.
+
+53) consume_frequency vs gender,city
+gender: pvalue > 0.05 -- so consumption not depending on the gender
+city: pvalue < 0.05 -- so consumption is depending on city
+gender:tier : pvalue > 0.05 so consumption is not depending on the interaction of the gender and tier.
+
+54) consume_frequency vs gender,tier
+# gender - no effect  
+# tier - effect for tier 1 the median is higher
+# not a lot of interaction effect.
+
+
+free flow analysis:
+
+55) consume_frequency vs consume_time
+in general - for the dataset - consume_frequency of 2-3 time in a week is most popular.
+pvalue > 0.05 but see that- trends are almost similar from the visualisation data -- most of the people drink for 2-3 times a week for staying awake during work/study or before exercise. Marketing team can consider adding these aspects into marketing campaign.
+
+56)consume_frequency vs tried_before(our drink)
+pvalue < 0.05 but doesnt mean anything here
+cramers V: 0.03 -- weak association.
+we expected that if the person is having a higher consumption freq - there is more chance of him trying - our drink.but from the visualisation we can see that those who rarely drink or once a week - they tend to buy our drink and this is also shown by the pvalue < 0.05.
+The reason: is marketing is driving these less frequent consumers of energy drinks to try our product more.
+so our current marketing strategy is effective in converting those who rarely consume energy drink. So our current marketing strategy is good to get new customers.
+
+57) consume_frequency vs current_brands
+consume_frequency is not really depending on the current_brands,
+Current popular brand - Cola-Coka,Bepsi and Gangster.
+
+58) consume_frequency vs reasons_for_choosing_brands
+even if pvalue > 0.05 - we still can see from the graph
+frequent drinker have various differnet reason to choose a particular brand 
+but the rare and very less frequently drinkers - choose a particular brand because of brand reputation, then follwed by availability and then by taste/flavor.
+so the frequent drinker have developed affinity for a brand over time and new buyers are heavily dependent on the external factor to choose a particular brand.
+
+59) consume_frequency vs packaging_preference
+across all the categoried - compact and portable cans and innovative bottle design is preferred.
+frequent drinker - 2-3time a week - they also seem to prefer collectible packaging -- NOT STATISTICALLY BAKCED. - pvalue > 0.05
+
+60) consume_frequency vs price_range
+frequency of drinking - doesnt get affected by - price range a lot
+but from the graph we can see that 50-99 is price range preferred by most customers - its preferred by frequent drinker as well as rare/ocassional drinkers.
+100-150 range is second most preferred range after 50-99.
+also from the graph we can see that some frequent driker and rare driker are willing to pay - even more than 150. -- proportion is much smaller.
+
+61) consume_frequency vs purchase_location
+# purchase location is not affecting consume_frequency pvalue > 0.05
+# but from the graph - we can see that across all the categies of drinker(based on consume_freq) - supermarkets is most popular purchase location
+# followed by the online retailers and then gym and fitness centers.
+
+62) consume_frequency vs typical_consumption_situation
+not accecting as pvalue > 0.05 
+but from heatmap - we can see that across all categories of drinking frequencies -- typical_consumption_situation are sports/exercise,studying/working late, social outings/parties.
+
+63) consume_time vs marketing_channels
+pvalue < 0.05 but no significant difference is visible in the graph.
+cramers v: 0.02 -- means weak association.
+but from graph we that - consumers who interact with online ads or tv commercials - they consume to stay awake during work/study mostly, follwed by before exercise.
+so this might indicate that in general brands are using the ads to influence the consumption timing of consumers.(Future Research)
+
+64) consume_reason vs marketing_channels
+pvalue < 0.05 means that marketing_channels affect the consume_reason
+cramer v: 0.04
+but we dont see any big difference in graph.
+most likely the ads are influencing the reasons to consume.
+
+65) heard_before vs tried_before
+pvalue < 0.05 means there is a relationship between the tried_before and heard_before columns
+cramers v: 0.56 moderate to high association
+This high relation or association is because we are assuming that those who have tried_before have definately heard_before about our drink.
+
+66) heard_before vs marketing_channels
+pvalue < 0.05 so effect is there.
+cramers V: 0.04 -- low association
+online ads and tv commerical seems to be working for our brand more as compared to other marketing channels - in making the consumer know that we exist.
+see for the tried_before vs marketing_channels -  only online ads comples the customer to buy and try our products 
+TV commericals though make us reach the audience but still its not able to comple customer to purchase our products.    -- TV commerical is popular is certain cities more than the online ads. These cities are -  Ahemdabad,Delhi,Mumbai,Pune,Lucknow and Jaipur.
+need to change the tv commerical strategy or need to scrape it completely and focus on online and other ads forms (Future Research)
+
+conversion rate with the online ads is much higher.
+conversion rate with the tv commerical ads is very very low.
+
+67) heard_before vs gender
+pvalue < 0.05 so gender and heard_before has relationship.
+Cramers_V: 0.06305282780612423 -- very weak association.
+In general females have heard more about our brands.
+For ('Yes' heard_before), 'Female' selected this category 6.22% more often than other gender (proportionally).
+For ('No' heard_before), 'Male' selected this category 12.93% more often than other gender (proportionally).
+
+
+
+68) brand_perception vs tried_before 
+pvalue < 0.05
+cramers v: 0.079 -- weak/low -- association.
+among those who have tried our drink - brand perception is either positive or neutral mostly
+among those who havent tried our drink - mostly neutral and positive but with some negative perception is also present.
+
+69) brand_perception vs marketing_channels
+not statistically backed
+pvalue > 0.05 but online ads and tv commericals are not very effective - and mostly neutral brand perception and slight positive brand perception 
+need better online ads and tv commerical strategy(but as tv commerical doesnt convert/lead to more sales - focus more on the online ads)
+
+70) brand_perception vs tier
+pvalue < 0.05 there is a relationship
+in tier 1 cities - we have positive brand perception with mostly neutral perception.
+in tier 2 cities - we have negative brand perception more that positive one alongside neutral perception
+We need to chage that negative brand perception to positive one - by targeted marketing strategy, using the marketing channels popular in tier 2 which is TV commercial and then online ads(Also need to decide which one to use as tv commerical has lower conversion.) --> (Future Research)
+
+71) tried_before vs marketing_channels
+pvalue < 0.05
+cramers V: 0.07
+online ads bring us more number of customer as compared to other marketing channels 
+TV commercial doesn't convert to customers -- means it is effective in communicating but doesnt compels the customer to buy our product. Might need to
+work on TV commercial marketing strategy.
+
+72) tried_before vs gender
+pvalue > 0.05 -- no statistical significance.
+among those who have tried our product are mostly males.
+
+73) tried_before vs age
+pvalue >0.05 doesnt matter much.
+
+74) current_brands vs reasons_for_choosing_brands
+even though pvalue > 0.05 but for the popular brand cola-coka,bepsi,gangster
+get picked over other brands because of first - solid brand reputation, followed by taste/flavor preference and then availability.
+
+75) current_brands vs marketing_channels
+# the most popular brands - have good online and tv commercial strategy.
+
+76) current_brands vs typical_consumption_situations
+pvalue > 0.05
+consumption_situation is not driving which brands customer will choose - so the energy drink is more like a general product - means taste,availability and other factors - decide which brand's drink customer will choose.
+
+77) current_brands vs age  -- all points shifter to upper one.
+
+78) health_concerns vs tier
+as pvalue > 0.05 but - from graph we can see that people from the tier 1 cities are more concerned about the health impact of energy drinks.
+
+79) consume_freq_scores vs consume_time
+# the median value for consume_time(before exercise) is 4 higher than other groups.
+# means higher frequency drinkers moslty drink before exercise.
+
+80) city vs consume_frequency
+pvalue = 0.00 and cramers v : 0.29(indicating weak to moderate association between variables)
+# most of the frequent drinkers are from banglore,chennai,mumbai,pune
+# and ocassional and rare drinkers are from the hyderabad and kolkata.
+
+81) tier vs consume_frequency
+Pvalue: 1.2086474354118675e-26, Cramers_V: 0.11300423362579898
+Once a week selected Tier 2 over other groups 46.69 %
+Rarely selected Tier 2 over other groups 17.43 %
+2-3 times a week selected Tier 1 over other groups 6.14 %
+Daily selected Tier 1 over other groups 9.13 %
+
+
+82) consume_freq_scores vs age vs tier.
+
+
+
+
+# see for the marketing analysis domain kpi and all - and try to apply it to the current analysis.
+
+
+effect size and then multivariate - two way anova and then find persona 
+and then try to quantify these finding like say males like natural product - find how much which age range - dive deep and deeper.
